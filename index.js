@@ -39,14 +39,14 @@ async function ejecutar () {
     temperature:'20',
     idDevice: '3'
   }
-  await runEngine(facts);
+  await engine.run(facts)
   array.push('3')
-  await runEngine(facts);
+  await engine.run(facts)
     
 }
 
 async function runEngine (facts) {
-  await engine.run(facts)
+  engine.run(facts)
 }
 
 ejecutar();
